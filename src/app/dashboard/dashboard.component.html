@@ -1,0 +1,8 @@
+<a *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
+    <section class="sect-1">
+      <div class="sect-icon">
+        <i class="icon-add-check"></i>
+      </div>
+      <div class="sect-title">{{hero.name}}</div>
+    </section>
+</a>

@@ -1,0 +1,22 @@
+<header>
+  <div class="logo"><h1>Canon CarePAK</h1></div>
+  <h1>{{title}}</h1>
+  <nav>
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/heroes">Tables</a>
+  </nav>
+</header>
+
+<div class="centered">
+  <router-outlet></router-outlet>
+</div>
+
+<footer>
+  <div class="foot-content">
+      &copy; Canon 2018
+  </div>
+</footer>
+
+<div class="message-ct">
+    <app-messages></app-messages>
+</div>

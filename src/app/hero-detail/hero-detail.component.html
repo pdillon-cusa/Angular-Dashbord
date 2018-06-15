@@ -1,0 +1,114 @@
+
+<!-- STATIC STUFF -->
+
+<div class="section-head" *ngIf="hero">
+    <div class="section-head__title">
+        <h3>{{ hero.name }} (ID:{{hero.id}})</h3>
+    </div>
+    <div class="section-head__actions">
+        <input [(ngModel)]="hero.name" class="form-control" />
+        
+  </div>
+</div>
+
+<div id="skuMaintenanceData_wrapper" class="dataTables_wrapper no-footer">
+    <div class="dataTables_length" id="skuMaintenanceData_length">
+        <label>Show
+            <select name="skuMaintenanceData_length" aria-controls="skuMaintenanceData" class="">
+                <option value="10">10</option>
+                <option value="25">25</option>
+            </select> entries</label>
+    </div>
+    <div class="dt-buttons"> </div>
+    <div id="skuMaintenanceData_filter" class="dataTables_filter">
+        <label>Search:
+            <input type="search" class="" placeholder="" aria-controls="skuMaintenanceData">
+        </label>
+    </div>
+    <table id="skuMaintenanceData" class="display stripe dataTable no-footer" style="width: 100%;" role="grid" aria-describedby="skuMaintenanceData_info">
+        <thead>
+            <tr role="row">
+                <th class="sorting_asc" tabindex="0" aria-controls="skuMaintenanceData" rowspan="1" colspan="1" aria-label="CarePAK Type: activate to sort column descending" aria-sort="ascending" style="width: 88px;">CarePAK Type</th>
+                <th class="sorting" aria-label="CarePAK SKU: activate to sort column ascending" style="width: 88px;">CarePAK SKU</th>
+                <th class="sorting" aria-label="CarePak SKU Name: activate to sort column ascending" style="width: 90px;">CarePak SKU Name</th>
+                <th class="sorting" aria-label="Product Group: activate to sort column ascending" style="width: 88px;">Product Group</th>
+                <th class="sorting" aria-label="Product Code: activate to sort column ascending" style="width: 88px;">Product Code</th>
+                <th class="sorting" aria-label="Level 2 Code: activate to sort column ascending" style="width: 88px;">Level 2 Code</th>
+                <th class="sorting" aria-label="Data Recovery: activate to sort column ascending" style="width: 89px;">Data Recovery</th>
+                <th class="sorting" aria-label="Prefix: activate to sort column ascending" style="width: 89px;">Prefix</th>
+                <th class="sorting" aria-label="Term: activate to sort column ascending" style="width: 88px;">Term</th>
+                <th class="sorting" aria-label="Start Date (Days): activate to sort column ascending" style="width: 88px;">Start Date (Days)</th>
+                <th class="no-sort sorting_disabled" rowspan="1" colspan="1" aria-label="" style="width: 88px;"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr role="row" class="odd">
+                <td>CarePAK Plus</td>
+                <td>7016403036</td>
+                <td>CPPBINO_29845</td>
+                <td>Medical</td>
+                <td>TS</td>
+                <td>A9</td>
+                <td>No</td>
+                <td>MSPDA</td>
+                <td>24</td>
+                <td>28</td>
+                <td><a href="#" onclick="showEditSkuModal('CarePAK Plus', 7016403036, 'CPPBINO_29845', 'Medical', 'TS', 'A9', false, 'MSPDA', 24, '28')">EDIT</a></td>
+            </tr>
+            <tr role="row" class="even">
+                <td>CarePAK Plus</td>
+                <td>375564231</td>
+                <td>CPPBINO_0504</td>
+                <td>Medical</td>
+                <td>CM</td>
+                <td>C5</td>
+                <td>Yes</td>
+                <td>OTHER</td>
+                <td>13</td>
+                <td>3</td>
+                <td><a href="#" onclick="showEditSkuModal('CarePAK Plus', 375564231, 'CPPBINO_0504', 'Medical', 'CM', 'C5', true, 'OTHER', 13, '3')">EDIT</a></td>
+            </tr>
+            <tr role="row" class="odd">
+                <td>CarePAK Plus</td>
+                <td>9003937077</td>
+                <td>CPPBINO_2894</td>
+                <td>Film</td>
+                <td>AL</td>
+                <td>A2</td>
+                <td>No</td>
+                <td>ESPDAR</td>
+                <td>49</td>
+                <td>68</td>
+                <td><a href="#" onclick="showEditSkuModal('CarePAK Plus', 9003937077, 'CPPBINO_2894', 'Film', 'AL', 'A2', false, 'ESPDAR', 49, '68')">EDIT</a></td>
+            </tr>
+            <tr role="row" class="even">
+                <td>CarePAK Plus</td>
+                <td>3993387192</td>
+                <td>CPPBINO_29845</td>
+                <td>Printer</td>
+                <td>TS</td>
+                <td>A2</td>
+                <td>No</td>
+                <td>MSPDA</td>
+                <td>60</td>
+                <td>28</td>
+                <td><a href="#" onclick="showEditSkuModal('CarePAK Plus', 3993387192, 'CPPBINO_29845', 'Printer', 'TS', 'A2', false, 'MSPDA', 60, '28')">EDIT</a></td>
+            </tr>
+            <tr role="row" class="odd">
+                <td>CarePAK Plus</td>
+                <td>6431452029</td>
+                <td>CRRLINO_0504</td>
+                <td>Medical</td>
+                <td>BN</td>
+                <td>A2</td>
+                <td>No</td>
+                <td>OTHER</td>
+                <td>48</td>
+                <td>52</td>
+                <td><a href="#" onclick="showEditSkuModal('CarePAK Plus', 6431452029, 'CRRLINO_0504', 'Medical', 'BN', 'A2', false, 'OTHER', 48, '52')">EDIT</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<button class="button"  (click)="goBack()">Back</button>
